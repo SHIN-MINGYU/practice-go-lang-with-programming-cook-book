@@ -18,7 +18,7 @@ func WorkWithTemp() error {
     }
 
 	// when conduct this work later
-	// temp'files all content is deleted when function is ended
+	// temp files all content is deleted when function is ended
 	defer os.RemoveAll(t)
 
 	// directory must be existed for creating temporary files
@@ -27,7 +27,7 @@ func WorkWithTemp() error {
 	if err!= nil {
         return err
     }
-	
+
 	fmt.Println(tf.Name())
 
 	// Usually delete temporary files at here
